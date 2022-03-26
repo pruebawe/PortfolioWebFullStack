@@ -1,0 +1,331 @@
+/* estilo general */
+body {
+    background: #f6f6f6;   
+}
+
+.mat-card{
+    border-radius: 20%;
+    margin: 10px 10px;
+    padding: 10px;
+    border-color: blue;
+    border-style: none;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+    width:100%;
+  }
+
+  /*header*/
+
+  .iconos {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/*card*/
+
+.mat-card#first-card {
+    padding:0;
+}
+
+div#imgbackground {
+    display: grid;
+  }
+
+div#imgbackground img {
+    width:100%;
+    border-radius: 0;
+}
+
+.profile {
+    margin-top: -130px;
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: ridge;
+    border-color: #000;
+
+}
+
+
+h3, h4 {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#pro {
+    padding-top: 20px;
+}
+
+div#info-pro {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-left: 25px;
+}
+
+#contenedorperfil {
+    display:flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nombrecompleto {
+    width: 30%;
+}
+
+.detalle {
+    width: 60%;
+}
+
+/*Sección experiencia*/
+
+
+#experiencia {
+    padding: 10px;
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#experiencia-contenedor {
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+#head {
+    font-weight: bold;
+}
+
+.emplogo {
+    padding: 5px;
+    float: left;
+    width:30%;
+}
+
+.info-personal {
+    float:right;
+    width:60%;
+ }
+ 
+.logoemp {
+     padding: 0;
+     margin: 0;
+ }
+
+.img-logo {
+    width:50%;
+    height:50%;
+    padding-right: 0;
+    padding-left: 60px;
+}
+
+span, p {
+    padding-right: 0;
+}
+
+/*Sección Educación*/
+
+.mat-card {
+    border-style: none;
+}
+
+#study {
+    padding: 10px;
+    color:black;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+    
+#study-contenedor {
+    margin: 0px;
+    display:flex;
+    padding:0;
+}
+
+/*Sección Habilidades*/
+
+.card mat-card {
+     padding: 0;
+     margin: 0;
+    box-sizing: border-box;
+}
+
+.name {
+    padding: 10px;
+    color:black;
+    text-transform: uppercase;
+    font-weight:bold;
+    margin-left: 15px;
+  }
+
+.porcentaje{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 98vh;
+  background: white;
+}
+
+.container{
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name {
+    padding: 10px;
+    color:black;
+    text-transform: uppercase;
+    font-weight:bold;
+    margin-left: 15px;
+  }
+
+.porcentaje{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 98vh;
+  background: white;
+}
+
+.container{
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .card{
+    position: relative;
+    width: 150px;
+    background-color: rgba(0,0,0,0.5);
+    display:inline-flexbox;
+    justify-content:center;
+    align-items: center;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 20px;
+    border-style: none;
+  }
+  
+  .container .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  }
+  
+  .container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height:100%;
+    background: white;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .porcent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #fff;
+    background: rgb(255,255,255);
+    z-index: 1000;
+  }
+  
+  .porcent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .porcent .number h2{
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+  }
+  
+  .card:hover .porcent .number h2{
+    color: rgb(0,0,0);
+    font-size: 53px;
+  }
+  .porcent .number h2 span{
+    color: rgb(0,0,0);
+  }
+  
+  .text{
+    position: relative;
+    color: rgb(0,0,0);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-85deg)!important;
+  }
+
+  svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #e79595a2;
+    stroke-width: 10;
+    stroke-linecap: round !important;
+    transform: translate(5px, 5px);
+  }
+  
+  /*circulo para simular el porcentaje*/
+  svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+  
+  
+  .card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: rgb(255,0,0);
+  }
+  .card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 40)/100);
+    stroke: rgb(255,0,0);
+  }
+  .card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 10)/100);
+    stroke: rgb(255,0,0);
+  }
+  .card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 10)/100);
+    stroke: rgb(255,0,0);
+  }
+  
