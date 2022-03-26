@@ -83,11 +83,19 @@ div#info-pro {
 
 .nombrecompleto {
     width: 30%;
+    float:left;
 }
 
 .detalle {
     width: 60%;
+    float: right;
 }
+
+.btn-edit {
+  position:absolute;
+  right:5px;
+}
+
 
 /*Sección experiencia*/
 
